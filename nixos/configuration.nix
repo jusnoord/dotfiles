@@ -12,6 +12,9 @@
     inputs.spicetify-nix.nixosModules.default
     inputs.nirinit.nixosModules.default
 
+    # Package version pins (see overlays/README.md)
+    ./overlays
+
     # Local modules
     ./modules/nix.nix
     ./modules/boot.nix

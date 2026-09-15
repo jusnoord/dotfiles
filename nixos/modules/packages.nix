@@ -77,7 +77,7 @@
 
     # gui apps
     vesktop # wordle
-    # moonlight-qt # FUCK windows
+    moonlight-qt # FUCK windows
     openrazer-daemon # razer mouse config
     piper # logitech mouse config
     ghostty
@@ -93,6 +93,7 @@
     libreoffice-qt # FUCK windows v2.
     hunspell # (dep of libreoffice)
     elinks # weird web browser
+    brave
     vscode # what do you think
     code-cursor-fhs
     superfile # file manager
@@ -117,7 +118,7 @@
     lm_sensors
     spotify-player
     gptfdisk
-    prusa-slicer
+    orca-slicer
   ];
 
   documentation = {

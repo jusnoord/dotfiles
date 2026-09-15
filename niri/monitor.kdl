@@ -23,3 +23,27 @@ output "HP Inc. HP 27f 3CM01504RN   " {
     position x=1026 y=796
 }
 
+output "DP-13" {
+    mode "1920x1080@60.000"
+
+    scale 1.0
+
+    transform "normal"
+    position x=2946 y=796
+}
+output "DP-3" {
+    mode "1920x1080@60.000"
+
+    scale 1.0
+
+    transform "normal"
+    position x=1026 y=796
+}
+output "DP-12" {
+    mode "1680x1050@59.954"
+
+    scale 1.0
+
+    transform "90"
+    position x=-24 y=492
+}
