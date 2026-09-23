@@ -101,5 +101,6 @@
   "workbench.colorTheme": "NoctaliaTheme",
   "C_Cpp.intelliSenseEngine": "disabled",
   "git.blame.editorDecoration.enabled": true,
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "editor.largeFileOptimizations": false
 }

@@ -29,6 +29,7 @@
     ./modules/services.nix
     ./modules/packages.nix
     ./modules/games.nix
+    ./modules/remote-build.nix
   ];
 
   system.stateVersion = "25.05"; # don't edit
