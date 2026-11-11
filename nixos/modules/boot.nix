@@ -67,13 +67,12 @@
 
     # Enable "Silent boot"
     consoleLogLevel = 3;
-    initrd.verbose = false;
     kernelParams = [
       "quiet"
       "udev.log_level=3"
       "systemd.show_status=auto"
 
-      "resume_offset=1943552"
+      "resume_offset=48123"
       "mem_sleep_default=deep"
       "module_blacklist=hid_sensor_hub"
     ];
@@ -97,12 +96,13 @@
   swapDevices = [
     {
       device = "/var/lib/swapfile";
-      size = 30 * 1024; # 16GB in MB
+      size = 30 * 1024; # 30GB in MB; changing this recreates the file, so re-check resume_offset
     }
   ];
 
   # TEST
   systemd.oomd.enable = true;
-  zramSwap.enable = true;
+  # zram keeps swapped pages in RAM, which starves the hibernation image (ENOMEM)
+  zramSwap.enable = false;
 
 }

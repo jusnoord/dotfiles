@@ -62,13 +62,13 @@ environment {
 
 prefer-no-csd
 
-// cursor {
-//     xcursor-theme "Nordzy-hyprcursors-catppuccin-frappe-dark"
-//     xcursor-size 48
-//
-//     hide-when-typing
-//     hide-after-inactive-ms 1000
-// }
+cursor {
+    xcursor-theme "Nordzy-catppuccin-frappe-dark"
+    xcursor-size 24
+
+    // hide-when-typing
+    // hide-after-inactive-ms 1000
+}
 
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
@@ -397,7 +397,7 @@ output "DP-2" {
     scale 1.0
 
     transform "normal"
-    position x=5196 y=2378
+    position x=-24 y=769
 }
 output "DVI-I-3" {
     mode "1920x1080@60.000"

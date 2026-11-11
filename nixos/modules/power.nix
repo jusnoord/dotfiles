@@ -12,6 +12,10 @@
 
   systemd.sleep.settings.Sleep.HibernateDelaySec = "30m";
 
+  # shrink the hibernation image as far as possible; the default (~40% of RAM)
+  # leaves no headroom for amdgpu evicting VRAM/GTT into RAM, causing ENOMEM
+  systemd.tmpfiles.rules = [ "w /sys/power/image_size - - - - 0" ];
+
   # power saving
   services.power-profiles-daemon.enable = true;
   # services.tlp = {

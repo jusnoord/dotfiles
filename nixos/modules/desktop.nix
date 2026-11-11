@@ -15,13 +15,22 @@
   };
 
   # autologin / display manager
-  services.greetd = {
+  services.displayManager.noctalia-greeter = {
     enable = true;
     settings = {
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --sessions /${config.services.displayManager.sessionData.desktops}/share/wayland-sessions --remember --remember-user-session";
-        user = "greeter";
+      cursor.size = 24;
+      keyboard.layout = "us";
+      auth.allow_empty_password = true;
+      appearance = {
+        hide_logo = true;
+        scheme_selector_position = "hidden";
       };
+      user.default = "door";
+
+    };
+    cursorTheme = {
+      package = pkgs.nordzy-cursor-theme;
+      name = "Nordzy-catppuccin-frappe-dark";
     };
   };
 

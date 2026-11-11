@@ -9,10 +9,6 @@ binds {
     Mod+T { spawn "ghostty"; }
     Mod+F12 { spawn-sh "noctalia msg panel-toggle launcher"; }
  // spawn with keyd
-    Mod+Z { spawn-sh "~/.config/scripts/menubt.fish"; }
-    Mod+X { spawn-sh "~/.config/scripts/menunmcli.fish"; }
-    Mod+Shift+C { spawn-sh "~/.config/scripts/theme-menu.fish"; }
-    Mod+C { spawn-sh "~/.config/scripts/menupa.fish"; }
     Mod+W { spawn "firefox"; }
     Mod+P { spawn "plex-desktop"; }
     Mod+S { spawn "~/.config/scripts/niri-ror/ror.sh" "--app-id" "spotify" "--command" "spotify"; }

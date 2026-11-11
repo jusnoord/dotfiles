@@ -24,10 +24,6 @@
       url = "github:Lxtharia/minegrub-world-sel-theme";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    pandora = {
-      url = "github:PandorasFox/pandora";
-      flake = false;
-    };
     nirimod = {
       url = "github:srinivasr/nirimod";
       inputs.nixpkgs.follows = "nixpkgs";

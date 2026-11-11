@@ -93,7 +93,6 @@
     libreoffice-qt # FUCK windows v2.
     hunspell # (dep of libreoffice)
     elinks # weird web browser
-    brave
     vscode # what do you think
     code-cursor-fhs
     superfile # file manager
@@ -110,6 +109,7 @@
     yt-dlp
     obs-studio
     p7zip
+    arduino-ide
 
     usbutils
     dmidecode
@@ -119,6 +119,11 @@
     spotify-player
     gptfdisk
     orca-slicer
+    nix-search-tv
+
+    awscli
+    docker-compose
+    podman-compose
   ];
 
   documentation = {

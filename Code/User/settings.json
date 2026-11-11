@@ -98,7 +98,6 @@
     "badge.background": "#dab9f9",
     "badge.foreground": "#151218"
   },
-  "workbench.colorTheme": "NoctaliaTheme",
   "C_Cpp.intelliSenseEngine": "disabled",
   "git.blame.editorDecoration.enabled": true,
   "explorer.confirmDelete": false,

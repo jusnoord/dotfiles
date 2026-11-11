@@ -19,9 +19,10 @@
   programs.gnome-disks.enable = true;
   programs.kdeconnect = {
     enable = true;
-    package = pkgs.valent;
+    package = pkgs.kdePackages.kdeconnect-kde;
   };
   programs.steam.enable = true;
+  programs.gamescope.enable = true;
 
   # thunar helpers
   services.gvfs.enable = true;
